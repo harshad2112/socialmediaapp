@@ -10,7 +10,6 @@ const server=new ApolloServer({
     typeDefs,
     resolvers
 })
-
 mongoose.connect(MONGODB,{useNewUrlParser:true,useUnifiedTopology: true})
     .then(()=>
     {console.log("mongoose connected")
